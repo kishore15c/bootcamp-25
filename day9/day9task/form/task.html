@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>User Information Form</h2>
+    <form id="userForm">
+      <label>Name:</label><br />
+      <input
+        type="text"
+        name="name"
+        placeholder="John Doe"
+        required
+        pattern="[A-Za-z\s]{3,}"
+        title="Name should be at least 3 letters and contain only alphabets"
+      /><br /><br />
+
+      <label>Email:</label><br />
+      <input
+        type="email"
+        name="email"
+        placeholder="john@example.com"
+        required
+      /><br /><br />
+
+      <label>Password:</label><br />
+      <input
+        type="password"
+        name="password"
+        placeholder="********"
+        required
+        minlength="6"
+        title="Password must be at least 6 characters"
+      /><br /><br />
+
+      <label>Phone Number:</label><br />
+      <input
+        type="tel"
+        name="phone"
+        placeholder="+91 9876543210"
+        required
+        pattern="[0-9]{10}"
+        title="Phone number must be exactly 10 digits"
+      /><br /><br />
+
+      <label>Date of Birth:</label><br />
+      <input type="date" name="dob" required /><br /><br />
+
+      <label>Gender:</label><br />
+      <select name="gender" required>
+        <option value="">Select</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option></select
+      ><br /><br />
+
+      <label>Address:</label><br />
+      <textarea
+        name="address"
+        placeholder="123 Main Street"
+        required
+        minlength="5"
+        title="Address must be at least 5 characters"
+      ></textarea
+      ><br /><br />
+
+      <label>City:</label><br />
+      <input
+        type="text"
+        name="city"
+        placeholder="ooty"
+        required
+        pattern="[A-Za-z\s]{2,}"
+        title="City name should contain only letters"
+      /><br /><br />
+
+      <label>State:</label><br />
+      <input
+        type="text"
+        name="state"
+        placeholder="Maharashtra"
+        required
+        pattern="[A-Za-z\s]{2,}"
+        title="State name should contain only letters"
+      /><br /><br />
+
+      <label>Pincode:</label><br />
+      <input
+        type="number"
+        name="pincode"
+        placeholder="400001"
+        required
+        pattern="[0-9]{6}"
+        title="Pincode must be 6 digits"
+      /><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h3>Submitted Information</h3>
+    <div id="outputContainer"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
