@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b9fa7a36c0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Portfolio</h2>
+      <button data-section="about">About Me</button>
+      <button data-section="education">Education</button>
+      <button data-section="projects">Projects</button>
+      <button data-section="skills">Skills</button>
+      <button data-section="experience">Experience</button>
+      <button data-section="contact">Contact</button>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <!-- About Section -->
+      <div id="about" class="section">
+        <h1>About Me</h1>
+        <p>
+          Hello, I am  vaithiswaran, a passionate web developer. I love creating clean,
+          minimal, and user-friendly websites using HTML, CSS, JavaScript.
+        </p>
+      </div>
+
+      <!-- Education Section -->
+      <div id="education" class="section">
+        <h1>Education</h1>
+        <ul>
+          <li>BCA – XYZ College (2022–2025)</li>
+          <li>High School – ABC School (2020)</li>
+        </ul>
+      </div>
+
+      <!-- Projects Section -->
+      <div id="projects" class="section">
+        <h1>Projects</h1>
+        <div class="card">Portfolio Website (HTML, CSS, JS)</div>
+        <div class="card">E-commerce Layout (React + API)</div>
+        <div class="card">Blog Website (Node.js + MongoDB)</div>
+      </div>
+
+      <!-- Skills Section -->
+      <div id="skills" class="section">
+        <h1>Skills</h1>
+        <div class="skill-bar"><span style="width: 90%">HTML</span></div>
+        <div class="skill-bar"><span style="width: 80%">CSS</span></div>
+        <div class="skill-bar"><span style="width: 75%">JavaScript</span></div>
+        <div class="skill-bar"><span style="width: 65%">React</span></div>
+      </div>
+
+      <!-- Experience Section -->
+      <div id="experience" class="section">
+        <h1>Experience</h1>
+        <p>Internship at ABC Tech – Frontend Developer (2025)</p>
+        <p>Freelance Projects – UI Design and Web Development</p>
+      </div>
+
+      <!-- Contact Section -->
+      <div id="contact" class="section">
+        <h1>Contact</h1>
+        <hr />
+        <br />
+          <p><i class="fa-solid fa-envelope"></i> abc@example.com</p>
+        </a>
+
+        <br />
+
+        <p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
+        <br />
+        <a href="https://github.com/kishore15c">
+          <p><i class="fa-brands fa-github"></i></p>
+        </a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
